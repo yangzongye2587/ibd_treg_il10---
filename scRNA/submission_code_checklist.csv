@@ -1,0 +1,12 @@
+﻿模块,必须补充的代码或参数,优先级,建议产物
+三队列整合,完整QC、纳排样本、批次校正、PC、resolution、marker阈值,最高,01_integrate_scRNA.R + sample_manifest.csv
+炎症评分,评分构成、缺失值、重复活检、样本级模型,最高,02_inflammation_score.R + score_definition.csv
+Fig3相关性,确认rho=0.47或0.63及对应样本数,最高,source_data_Fig3E.csv
+scATAC,QC、LSI、注释、反卷积、DA、chromVAR、footprint,最高,05_scATAC_pipeline.R或.ipynb
+SCENIC,从表达矩阵至AUCell的完整命令和数据库版本,最高,04_SCENIC_pipeline.py
+Fig6 bulk RNA,FASTQ/矩阵输入、设计公式、阈值、GO背景,最高,06_bulk_RNAseq.R
+机器学习,患者级拆分、嵌套特征选择、seed、95%CI、校准,高,04_machine_learning.R
+CellOracle,base GRN、pseudotime、edge阈值、随机化次数,高,environment.yml + parameter_table.csv
+ChIP-seq,bigWig/BED来源、mm10坐标、重复和定量统计,高,chip_manifest.csv
+动物结果,体重混合模型及终点统计脚本,高,07_mouse_statistics.R
+环境,R/Python及全部包版本,高,sessionInfo.txt + environment.yml
